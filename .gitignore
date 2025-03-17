@@ -23,5 +23,28 @@ go.work.sum
 
 # env file
 .env
-
+.terraform
 .tfstate
+# Terraformの作業ディレクトリ
+.terraform/
+
+# Terraformの状態ファイル
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraformのロックファイル
+.terraform.lock.hcl
+
+# プラン出力ファイル
+*.tfplan
+
+# 機密情報を含む可能性のあるファイル
+*.tfvars
+
+# ログファイル
+crash.log
+
+# その他の一時ファイル
+*.log
+*.bak
+*.tmp
